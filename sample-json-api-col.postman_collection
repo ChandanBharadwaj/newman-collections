@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "a8cfc7e0-1b30-4508-87f4-1217f349acc4",
+		"name": "sample-postman-col",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jsonplaceholder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/todos/",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jsonplaceholder-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{qa-url}}/todos/{{todo-id}}",
+					"protocol": "https",
+					"host": [
+						"{{qa-url}}"
+					],
+					"path": [
+						"todos",
+						"{{todo-id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
